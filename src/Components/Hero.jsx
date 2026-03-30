@@ -6,7 +6,7 @@ import dotImg from "../assets/Group_5.png";
 const Hero = () => {
   return (
     <>
-      <div className="relative w-full mx-auto  py-12 md:py-20 font-sans">
+      <div className="relative w-full py-12 md:py-20 font-sans container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-sm font-medium">
