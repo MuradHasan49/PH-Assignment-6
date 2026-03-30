@@ -1,10 +1,11 @@
 import React, { Suspense, useState } from "react";
 import Header from "./ReUseComponents/Header";
 import ToolsCard from "./ReUseComponents/ToolsCard";
+import CartSection from "./CartSection";
 
 const LoadDataPromise = fetch("./ToolsCardData.json").then((res) => res.json());
 
-const DigitalToolsCard = () => {
+const DigitalToolsCard = ({ selected, setSelected }) => {
   const [isActive, setIsActive] = useState("Products");
 
   return (
@@ -35,21 +36,29 @@ const DigitalToolsCard = () => {
               : "rounded-full"
           }`}
         >
-          Cart (2)
+          Cart ({selected.length})
         </button>
       </div>
 
-      <div className="container mx-auto px-4 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <Suspense
-          fallback={
-            <span className="loading loading-infinity loading-xl"></span>
-          }
-        >
-          <ToolsCard 
-          LoadDataPromise = {LoadDataPromise}
-          />
-        </Suspense>
-      </div>
+      {isActive === "Products" ? (
+        <div className="container mx-auto px-4 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Suspense
+            fallback={
+              <span className="loading loading-spinner text-error "></span>
+            }
+          >
+            <ToolsCard
+              LoadDataPromise={LoadDataPromise}
+              setSelected={setSelected}
+              selected={selected}
+            />
+          </Suspense>
+        </div>
+      ) : (
+        <div className="container mx-auto">
+          <CartSection selected={selected} setSelected={setSelected} />
+        </div>
+      )}
     </>
   );
 };

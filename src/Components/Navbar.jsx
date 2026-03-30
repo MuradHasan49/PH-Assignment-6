@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({selected}) => {
   return (
     <>
       <div className="navbar container mx-auto">
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
           <a
             href="#"
-            className="text-3xl py-4 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text"
+            className="text-3xl py-4 font-bold bg-linear-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text"
           >
             DigiTools
           </a>
@@ -92,11 +92,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="text-2xl mr-2">
+          <div className="text-2xl mr-2 relative">
+            <div className="font-bold bg-red-300 w-5 h-5 rounded-full text-sm absolute -top-3 left-4 flex justify-center items-center">
+              <p>{selected.length}</p>
+            </div>
             <MdOutlineShoppingCart />
           </div>
           <p className="font-semibold mr-2">Login</p>
-          <a className="bg-gradient-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
+          <a className="bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
             Get Started
           </a>
         </div>

@@ -1,8 +1,14 @@
-import React, { use } from "react";
+import React, { use,  } from "react";
 import { Check } from "lucide-react";
-const ToolsCard = ({ LoadDataPromise }) => {
+
+const ToolsCard = ({ LoadDataPromise, setSelected, selected }) => {
   const Data = use(LoadDataPromise);
-  console.log(Data);
+
+  let selectedData = (item) => {
+    setSelected([...selected, item]);
+    
+  };
+
   return (
     <>
       {Data.map((item) => (
@@ -10,7 +16,16 @@ const ToolsCard = ({ LoadDataPromise }) => {
           key={item.id}
           className="max-w-sm bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 relative"
         >
-          <div className="absolute top-6 right-6 bg-orange-50 text-orange-600 px-4 py-1.5 rounded-full text-xs font-semibold">
+          <div
+            className={`absolute top-6 right-6 px-4 py-1.5 rounded-full text-xs font-semibold
+  ${
+    item.tagType === "popular"
+      ? "bg-green-50 text-green-600"
+      : item.tagType === "new"
+        ? "bg-yellow-50 text-red-600"
+        : "bg-red-50 text-purple-600 "
+  }`}
+          >
             {item.tag}
           </div>
 
@@ -31,14 +46,20 @@ const ToolsCard = ({ LoadDataPromise }) => {
           </div>
 
           <ul className="space-y-4 mb-8">
-            {item.features.map((data , ind) => (
-              <div key={ind} className="flex items-center gap-3 text-slate-600 text-sm">
+            {item.features.map((data, ind) => (
+              <div
+                key={ind}
+                className="flex items-center gap-3 text-slate-600 text-sm"
+              >
                 <Check size={18} className="text-emerald-500 stroke-[3px]" />
                 <li> {data}</li>
               </div>
             ))}
           </ul>
-          <button className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:scale-105 text-white font-medium py-3.5 rounded-full transition-colors duration-300 cursor-pointer">
+          <button
+            onClick={() => selectedData(item)}
+            className={`w-full bg-linear-to-r from-indigo-500 to-purple-500 hover:scale-105 text-white font-medium py-3.5 rounded-full transition-colors duration-300 cursor-pointer`}
+          >
             Buy Now
           </button>
         </div>
