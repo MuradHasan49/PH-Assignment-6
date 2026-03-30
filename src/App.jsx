@@ -1,10 +1,10 @@
 import "./App.css";
-import { IoIosMan } from "react-icons/io";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <>
-      <IoIosMan />
+    <Navbar />
     </>
   );
 }
