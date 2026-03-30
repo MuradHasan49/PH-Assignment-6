@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Perfect for beginners to create professional resumes quickly.",
+    "price": 9,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "50+ templates",
+      "Basic ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "FileText",
+    "image": "https://source.unsplash.com/400x300/?resume,document"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced tools to craft high-quality resumes.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "150+ templates",
+      "Full ATS optimization",
+      "Cover letter builder",
+      "Export to PDF & Word"
+    ],
+    "icon": "Briefcase",
+    "image": "https://source.unsplash.com/400x300/?office,work"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "Everything you need to stand out in job applications.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "200+ templates",
+      "AI resume suggestions",
+      "LinkedIn optimization",
+      "Priority support"
+    ],
+    "icon": "TrendingUp",
+    "image": "https://source.unsplash.com/400x300/?career,success"
+  },
+  {
+    "id": 4,
+    "name": "Student Plan",
+    "description": "Affordable resume tools designed for students.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "80+ templates",
+      "Basic ATS optimization",
+      "Internship-focused designs"
+    ],
+    "icon": "GraduationCap",
+    "image": "https://source.unsplash.com/400x300/?student,study"
+  },
+  {
+    "id": 5,
+    "name": "Professional Plan",
+    "description": "For experienced professionals aiming for top roles.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "250+ templates",
+      "Advanced ATS optimization",
+      "Personal branding tools",
+      "Export in multiple formats"
+    ],
+    "icon": "UserCheck",
+    "image": "https://source.unsplash.com/400x300/?business,professional"
+  },
+  {
+    "id": 6,
+    "name": "Enterprise Pack",
+    "description": "Complete hiring and resume solution for teams.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited templates",
+      "Team collaboration",
+      "Bulk resume export",
+      "Dedicated support"
+    ],
+    "icon": "Building",
+    "image": "https://source.unsplash.com/400x300/?team,office"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Designed for freelancers to showcase their skills.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "120+ templates",
+      "Portfolio integration",
+      "Client-ready resumes"
+    ],
+    "icon": "Laptop",
+    "image": "https://source.unsplash.com/400x300/?freelancer,laptop"
+  },
+  {
+    "id": 8,
+    "name": "Executive Suite",
+    "description": "Premium resume tools for executives and leaders.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Exclusive templates",
+      "Executive branding",
+      "1-on-1 consultation",
+      "Priority export"
+    ],
+    "icon": "Crown",
+    "image": "https://source.unsplash.com/400x300/?leader,executive"
+  }
+]

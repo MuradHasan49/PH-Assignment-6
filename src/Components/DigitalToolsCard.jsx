@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import Header from "./ReUseComponents/Header";
+import ToolsCard from "./ReUseComponents/ToolsCard";
+
+const LoadDataPromise = fetch("./ToolsCardData.json").then((res) => res.json());
 
 const DigitalToolsCard = () => {
-  const [isActive, setIsActive] = useState("selected");
+  const [isActive, setIsActive] = useState("Products");
 
   return (
     <>
@@ -14,9 +17,9 @@ const DigitalToolsCard = () => {
 
       <div className="text-center">
         <button
-          onClick={() => setIsActive("selected")}
-          className={ `text-xl btn rounded-full rounded-r-none ${
-            isActive === "selected"
+          onClick={() => setIsActive("Products")}
+          className={`text-xl btn rounded-full rounded-r-none ${
+            isActive === "Products"
               ? "bg-linear-to-r from-indigo-500 to-purple-500 text-white rounded-full rounded-r-none"
               : "rounded-full"
           }`}
@@ -34,6 +37,18 @@ const DigitalToolsCard = () => {
         >
           Cart (2)
         </button>
+      </div>
+
+      <div className="container mx-auto px-4 my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Suspense
+          fallback={
+            <span className="loading loading-infinity loading-xl"></span>
+          }
+        >
+          <ToolsCard 
+          LoadDataPromise = {LoadDataPromise}
+          />
+        </Suspense>
       </div>
     </>
   );
