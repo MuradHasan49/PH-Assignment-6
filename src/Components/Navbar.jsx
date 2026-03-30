@@ -1,9 +1,10 @@
 import React from "react";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,51 +29,76 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a href="#" className="mr-6">
+                  Products
+                </a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a href="#" className="mr-6">
+                  Features
+                </a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a href="#" className="mr-6">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="mr-6">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#" className="mr-6">
+                  FAQ
+                </a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a
+            href="#"
+            className="text-3xl py-4 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text"
+          >
+            DigiTools
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="flex font-semibold text-[#101727]">
             <li>
-              <a>Item 1</a>
+              <a href="#" className="mr-6 hover:underline">
+                Products
+              </a>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2 bg-base-100 w-40 z-1">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <a href="#" className="mr-6 hover:underline">
+                Features
+              </a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a href="#" className="mr-6 hover:underline">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#" className="mr-6 hover:underline">
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a href="#" className="mr-6 hover:underline">
+                FAQ
+              </a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <div className="text-2xl mr-2">
+            <MdOutlineShoppingCart />
+          </div>
+          <p className="font-semibold mr-2">Login</p>
+          <a className="bg-gradient-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
+            Get Started
+          </a>
         </div>
       </div>
     </>
