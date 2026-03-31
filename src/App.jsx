@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import Footer from "./Components/Footer";
 import WorkFlowSection from "./Components/WorkflowSection";
 import GetStarts from "./Components/GetStarts";
+import TransparentPricing from "./Components/TransparentPricing";
 
 function App() {
   const [selected, setSelected] = useState([]);
@@ -19,6 +20,7 @@ function App() {
       <StatsBanner />
       <DigitalToolsCard selected={selected} setSelected={setSelected} />
       <GetStarts/>
+      <TransparentPricing/>
       <WorkFlowSection/>
       <Footer />
     </>
