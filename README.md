@@ -27,7 +27,7 @@ Whether it's the custom-styled data grids or the advanced cart logic that tracks
 ## ✨ Key Features
 
 ### 🛒 1. Smart Cart Isolation State & Performance
-When purchasing a digital tool, standard React arrays often toggle *all* buttons on a screen at once. In this project, state is calculated instantly inside the render cycle using the JS `.some()` method. This ensures that only the card you clicked shifts its state and displays the green "Added Successfully" badge.
+When purchasing a digital tool, standard React arrays often toggle *all* buttons on a screen at once. In this project, state is calculated instantly inside the render cycle using the JS `.filter() or find()` method. This ensures that only the card you clicked shifts its state and displays the green "Added Successfully" badge.
 
 ### 🧮 2. Safe Array Reductions (No Duplicates)
 Instead of relying on basic loops or standard `.map()` setups to calculate the financial totals of your chosen digital tools, this project leverages safe JS array reduction (`.reduce()`). This removes rendering bugs and correctly adds up items securely.
