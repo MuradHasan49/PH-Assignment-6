@@ -30,7 +30,7 @@ Whether it's the custom-styled data grids or the advanced cart logic that tracks
 When purchasing a digital tool, standard React arrays often toggle *all* buttons on a screen at once. In this project, state is calculated instantly inside the render cycle using the JS `.filter() or find()` method. This ensures that only the card you clicked shifts its state and displays the green "Added Successfully" badge.
 
 ### 🧮 2. Safe Array Reductions (No Duplicates)
-Instead of relying on basic loops or standard `.map()` setups to calculate the financial totals of your chosen digital tools, this project leverages safe JS array reduction (`.reduce()`). This removes rendering bugs and correctly adds up items securely.
+Instead of relying on basic loops or standard `.map()` setups to calculate the financial totals of your chosen digital tools, this project leverages safe JS array reduction (`.find()`). This removes rendering bugs and correctly adds up items securely.
 
 ### ⚡ 3. Asynchronous Data Mapping (Streaming)
 The tool-card layouts directly feed off advanced React paradigms, streaming external JSON file information on the fly using native Promises and React's fallback `Suspense` tags. This keeps the UI highly scalable and ready for real backend database connections.
