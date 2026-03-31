@@ -18,6 +18,7 @@ Whether it's the custom-styled pricing grid or the advanced cart logic that prev
 | :--- | :--- |
 | **React 19** | For building a fast, component-based user interface using advanced hooks like `use`. |
 | **Tailwind CSS** | For rapid, utility-first responsive styling and beautiful custom color gradients. |
+| **daisyUI** | Tailwind CSS component plugin used to create rapid, visually stunning base elements with semantic class names. |
 | **Lucide React** | For lightweight, clean, and consistent stroke-based SVG iconography. |
 | **React-Toastify** | To handle non-intrusive and visually appealing UI event notifications. |
 
@@ -31,7 +32,10 @@ When purchasing a digital tool, standard React arrays usually toggle *all* butto
 ### 📊 2. Premium 3-Tier Pricing Layout
 Features a highly visual conversion-optimized pricing layout (Starter, Pro, and Enterprise). The middle "Pro" card uses negative margins and calculated heights to physically float above the others, signaling the "Most Popular" option directly to the user.
 
-### ⚡ 3. Asynchronous Data Mapping
+### 🎨 3. Rapid UI via daisyUI Components
+By integrating daisyUI as a Tailwind plugin, this project bypasses the need for massive lines of utility classes to construct common website assets. It leverages clean semantic classes for elements like buttons, badges, and background themes, producing highly maintainable code.
+
+### ⚡ 4. Asynchronous Data Mapping
 The tool-card layouts directly feed off advanced React paradigms, streaming array information on the fly using promises. This keeps the UI highly scalable and ready for real backend database integrations without forcing large rewrites.
 
 ---
