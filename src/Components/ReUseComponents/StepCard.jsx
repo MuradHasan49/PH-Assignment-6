@@ -3,7 +3,7 @@ import { UserPlus } from "lucide-react";
 
 const StepCard = ({number, img , title, description}) => {
   return (
-    <div className="relative max-w-sm bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div className="relative  bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
       <div className="absolute top-6 right-6 w-8 h-8 bg-[#7c24f6] text-white text-xs font-bold rounded-full flex items-center justify-center">
         {number}
       </div>

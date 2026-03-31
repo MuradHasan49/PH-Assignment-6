@@ -21,7 +21,7 @@ const ToolsCard = ({ LoadDataPromise, setSelected, selected }) => {
         return (
           <div
             key={item.id}
-            className="max-w-sm bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 relative"
+            className=" bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 relative"
           >
             <div
               className={`absolute top-6 right-6 px-4 py-1.5 rounded-full text-xs font-semibold
