@@ -5,7 +5,7 @@ import Header from "./ReUseComponents/Header";
 const TransparentPricing = () => {
   return (
     <>
-      <div className="container mx-auto py-30">
+      <div className=" py-30">
         <Header
           title="Simple, Transparent Pricing"
           description="Choose the plan that fits your needs. Upgrade or downgrade anytime."
@@ -13,8 +13,8 @@ const TransparentPricing = () => {
 
         <div className="">
           <div className="w-full bg-slate-50 py-20 px-6">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-[550px]">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+              <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-137.5">
                 <div>
                   <h3 className="text-2xl font-bold text-[#0f172a]">Starter</h3>
                   <p className="text-slate-400 text-sm mt-1">
@@ -65,7 +65,7 @@ const TransparentPricing = () => {
                 </button>
               </div>
 
-              <div className="relative bg-[#7c24f6] text-white rounded-3xl p-8 shadow-xl flex flex-col justify-between h-[600px] md:-my-6">
+              <div className="relative bg-[#7c24f6] text-white rounded-3xl p-8 shadow-xl flex flex-col justify-between h-150 md:-my-6">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#ffedd5] text-[#d97706] text-xs font-bold px-4 py-1.5 rounded-full shadow-sm">
                   Most Popular
                 </div>
@@ -114,7 +114,7 @@ const TransparentPricing = () => {
                 </button>
               </div>
 
-              <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-[550px]">
+              <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-137.5">
                 <div>
                   <h3 className="text-2xl font-bold text-[#0f172a]">
                     Enterprise

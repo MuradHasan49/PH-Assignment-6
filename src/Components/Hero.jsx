@@ -27,7 +27,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className=" bg-gradient-to-r from-indigo-500 to-purple-500 hover:scale-105 text-white font-medium px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-indigo-200">
+              <button className=" bg-linear-to-r from-indigo-500 to-purple-500 hover:scale-105 text-white font-medium px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-indigo-200">
                 Explore Products
               </button>
 
@@ -48,7 +48,7 @@ const Hero = () => {
                 />
               </div>
 
-              <div className="absolute -z-10 -inset-4 bg-gradient-to-r from-blue-100 to-purple-100 opacity-30 blur-2xl rounded-3xl"></div>
+              <div className="absolute -z-10 -inset-4 bg-linear-to-r from-blue-100 to-purple-100 opacity-30 blur-2xl rounded-3xl"></div>
             </div>
           </div>
         </div>
