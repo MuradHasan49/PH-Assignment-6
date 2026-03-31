@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import Header from "./ReUseComponents/Header";
 import ToolsCard from "./ReUseComponents/ToolsCard";
 import CartSection from "./CartSection";
+import EmptyCart from "./ReUseComponents/EmptyCart";
 
 const LoadDataPromise = fetch("./ToolsCardData.json").then((res) => res.json());
 
@@ -56,7 +57,11 @@ const DigitalToolsCard = ({ selected, setSelected }) => {
         </div>
       ) : (
         <div className="container mx-auto">
-          <CartSection selected={selected} setSelected={setSelected} />
+          {selected.length <= 0 ? (
+            <EmptyCart/>
+          ) : (
+            <CartSection selected={selected} setSelected={setSelected} />
+          )}
         </div>
       )}
     </>

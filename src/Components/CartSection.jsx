@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const CartSection = ({ selected, setSelected }) => {
   // console.log(selected)
@@ -11,10 +12,15 @@ const CartSection = ({ selected, setSelected }) => {
 
   const clearAll = () => {
     setSelected([]);
+    toast.success("check out successful", {
+      position: "top-center",
+      theme: "colored",
+    });
   };
 
   const handleRemove = (id) => {
     setSelected((prev) => prev.filter((item) => item.id !== id));
+    toast.error("Card Item Reomved ");
   };
   return (
     <>
