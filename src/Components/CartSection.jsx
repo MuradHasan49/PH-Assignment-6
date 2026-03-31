@@ -2,7 +2,6 @@ import React from "react";
 import { toast } from "react-toastify";
 
 const CartSection = ({ selected, setSelected }) => {
-  // console.log(selected)
   let Total = () => {
     let total = 0;
     selected.map((info) => (total = total + info.price));
