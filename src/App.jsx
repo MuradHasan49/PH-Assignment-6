@@ -4,6 +4,8 @@ import DigitalToolsCard from "./Components/DigitalToolsCard";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import StatsBanner from "./Components/StatsBanner";
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
     const [selected, setSelected] = useState([]);
@@ -11,6 +13,7 @@ function App() {
   return (
     <>
       <main className="">
+        <ToastContainer/>
         {/* <Navbar
         selected ={selected}
         />
@@ -20,6 +23,7 @@ function App() {
         selected ={selected}
         setSelected ={setSelected}
         />
+        
       </main>
     </>
   );

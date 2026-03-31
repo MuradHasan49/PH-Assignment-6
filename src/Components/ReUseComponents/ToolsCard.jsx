@@ -1,12 +1,15 @@
-import React, { use,  } from "react";
+import React, { use } from "react";
 import { Check } from "lucide-react";
+import { toast } from "react-toastify";
 
 const ToolsCard = ({ LoadDataPromise, setSelected, selected }) => {
   const Data = use(LoadDataPromise);
 
   let selectedData = (item) => {
-    setSelected([...selected, item]);
-    
+    const found = selected.find((data) => data.id === item.id);
+    found
+      ? toast.warn("Already added")
+      : (setSelected([...selected, item]), toast.success("Added successfully"));
   };
 
   return (
