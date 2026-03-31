@@ -9,16 +9,15 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
     const [selected, setSelected] = useState([]);
-  // console.log(selected);
   return (
     <>
       <main className="">
         <ToastContainer/>
-        {/* <Navbar
+        <Navbar
         selected ={selected}
         />
         <Hero />
-        <StatsBanner /> */}
+        <StatsBanner />
         <DigitalToolsCard 
         selected ={selected}
         setSelected ={setSelected}
