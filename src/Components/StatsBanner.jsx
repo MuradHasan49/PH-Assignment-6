@@ -2,7 +2,7 @@ import React from "react";
 
 const StatsBanner = () => {
   return (
-    <div className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-12 my-20">
+    <div className="container mx-auto bg-linear-to-r from-indigo-500 to-purple-500 text-white py-12 my-20 rounded-lg">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center">
         <div className="flex flex-col items-center justify-center text-center py-6 md:py-0">
           <h2 className="text-5xl font-bold mb-2">50K+</h2>

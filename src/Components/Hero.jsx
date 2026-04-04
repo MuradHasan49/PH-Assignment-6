@@ -6,11 +6,11 @@ import dotImg from "../assets/Group_5.png";
 const Hero = () => {
   return (
     <>
-      <div className="relative w-full py-12 md:py-20 font-sans container mx-auto">
+      <div className="relative container mx-auto py-12 md:py-20 font-sans">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-7 space-y-6">
+          <div className="md:col-span-6 space-y-6 px-4 md:px-0">
             <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-sm font-medium">
-              <img src={dotImg} alt="#" />
+              <img src={dotImg} alt="#" className="animate-ping [animation-duration:1.3s]" />
               <span>New: AI-Powered Tools Available</span>
             </div>
 
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="md:col-span-5 relative flex justify-center md:justify-end">
+          <div className="md:col-span-6 relative flex justify-center md:justify-end">
             <div className="relative w-full max-w-md">
               <div className="overflow-hidden rounded-xl shadow-xl border border-slate-100">
                 <img
@@ -47,8 +47,6 @@ const Hero = () => {
                   className="w-full h-auto object-cover"
                 />
               </div>
-
-              <div className="absolute -z-10 -inset-4 bg-linear-to-r from-blue-100 to-purple-100 opacity-30 blur-2xl rounded-3xl"></div>
             </div>
           </div>
         </div>

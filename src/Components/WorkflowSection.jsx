@@ -2,10 +2,9 @@ import React from 'react';
 
 const WorkFlowSection = () => {
   return (
-    <div className="w-full bg-[#7c24f6] text-white py-20 px-6 text-center">
+    <div className="container mx-auto bg-[#7c24f6] text-white py-20 mb-8 px-6 text-center rounded-lg">
       <div className="max-w-4xl mx-auto space-y-6">
         
-       
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
           Ready To Transform Your Workflow?
         </h1>

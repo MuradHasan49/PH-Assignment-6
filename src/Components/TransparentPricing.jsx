@@ -12,7 +12,7 @@ const TransparentPricing = () => {
         />
 
         <div className="">
-          <div className="w-full bg-slate-50 py-20 px-6">
+          <div className="container mx-auto py-20 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-137.5">
                 <div>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { use } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = ({selected}) => {
+
+const Navbar = ({ selected  }) => {
+
   return (
     <>
-      <div className="navbar container mx-auto">
+      <div className="navbar container mx-auto border-b border-gray-300 sticky top-0 z-10 bg-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,6 +55,13 @@ const Navbar = ({selected}) => {
                   FAQ
                 </a>
               </li>
+              <div className=" flex flex-col gap-2 items-center">
+
+                <p className="text-sm font-semibold mr-2">Login</p>
+                <a className="text-sm bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
+                  Get Started
+                </a>
+              </div>
             </ul>
           </div>
           <a
@@ -93,15 +102,17 @@ const Navbar = ({selected}) => {
         </div>
         <div className="navbar-end">
           <div className="text-2xl mr-2 relative">
-            <div className="font-bold bg-red-300 w-5 h-5 rounded-full text-sm absolute -top-3 left-4 flex justify-center items-center">
-              <p>{selected.length}</p>
+            <div className={`font-bold bg-red-400 w-5 h-5 rounded-full text-sm absolute -top-3 left-4 flex justify-center items-center ${selected.length === 0 ? 'hidden' : ''}`}>
+              <p className="text-white">{selected.length}</p>
             </div>
             <MdOutlineShoppingCart />
           </div>
-          <p className="font-semibold mr-2">Login</p>
-          <a className="bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
-            Get Started
-          </a>
+          <div className="ml-3 hidden lg:flex items-center">
+            <p className="text-sm font-semibold mr-2">Login</p>
+            <a className="text-sm bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-full font-semibold text-white">
+              Get Started
+            </a>
+          </div>
         </div>
       </div>
     </>
