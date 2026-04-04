@@ -1,8 +1,12 @@
 # 🛠️ DigiTools Platform
 
-**🔗 [Live Visit / Demo: mhs-digitools.netlify.app](https://mhs-digitools.netlify.app/#)**
-
 A modern, high-performance SaaS landing page and digital tool-purchasing platform. This project features a smooth interface with calculated dynamic cart states, designed to showcase tech products effectively.
+
+---
+
+## 🌐 Live Demo
+
+👉 **Visit Now:** https://mhs-digitools.netlify.app/#
 
 ---
 
@@ -36,3 +40,5 @@ Instead of relying on basic loops or standard `.map()` setups to calculate the f
 
 ### ⚡ 3. Asynchronous Data Mapping (Streaming)
 The tool-card layouts directly feed off advanced React paradigms, streaming external JSON file information on the fly using native Promises and React's fallback `Suspense` tags. This keeps the UI highly scalable and ready for real backend database connections.
+
+---
