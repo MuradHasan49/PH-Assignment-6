@@ -6,7 +6,7 @@ A modern, high-performance SaaS landing page and digital tool-purchasing platfor
 
 ## 🌐 Live Demo
 
-👉 **Visit Now:** https://mhs-digitools.netlify.app/#
+👉 **Visit Now:** https://mhs-digitools.netlify.app/
 
 ---
 
