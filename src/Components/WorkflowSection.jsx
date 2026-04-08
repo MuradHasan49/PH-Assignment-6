@@ -2,7 +2,8 @@ import React from 'react';
 
 const WorkFlowSection = () => {
   return (
-    <div className="container mx-auto bg-[#7c24f6] text-white py-20 mb-8 px-6 text-center rounded-lg">
+    <div className="bg-[#7c24f6]">
+    <div className="container mx-auto  text-white py-20 px-6 text-center rounded-lg">
       <div className="max-w-4xl mx-auto space-y-6">
         
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
@@ -39,6 +40,7 @@ const WorkFlowSection = () => {
         </div>
 
       </div>
+    </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="container mx-auto  bg-[#0f172a] text-white py-12 px-6 md:py-16 rounded-lg">
+    <div className=" bg-[#0f172a]">
+      <footer className="container mx-auto  text-white py-12 px-6 md:py-16 rounded-lg">
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-4 mb-12">
             <div className="md:col-span-5 space-y-4">
